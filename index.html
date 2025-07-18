@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Tailwindcss</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    spacing: {
+                        19: '4.75rem', // 19 * 0.25rem = 4.75rem
+                    },
+                    fontFamily: {
+                        Bitcount: ['Bitcount Prop Single', 'sans-serif'],
+                    },
+                    colors: {
+                        cuy: '#d9f99d',
+                    },
+                    animation: {
+                        'bounce': 'bounce 2s infinite',
+                        'goyang': 'goyang 1s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        goyang: {
+                            '0%, 100%': { transform: 'rotate(-3deg)' },
+                            '50%': { transform: 'rotate(3deg)' },
+                        },
+                    }
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        #toggle:checked ~ label div.toggle-circle  {
+            @apply translate-x-3;
+        }
+    </style>
+</head>
+
+<body class="dark:bg-slate-800 dark:text-slate-200">
+    <h1 class="text-6xl font-bold text-center my-10"> Belajar
+        <span class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">TailwindCSS 3</span>
+    </h1>
+
+    <section class="mb-10 bg-gradient-to-br from-indigo-200 via-red-400 to-yellow-300">
+        <h2 class="text-2xl text-center font-semibold">Spacing</h2>
+        <div class="m-19">Margin</div>
+        <div class="h3-8 ">Padding</div>
+    </section>
+
+    <section class="mb-10 bg-slate-400">
+        <h2 class="text 2xl text-center font-semibold">Sizing</h2>
+        <div class="w-60 h-60 bg-cuy">Kotak 1</div>
+        <!-- <div class="max-h-screen min-h-screen">Kotak 2</div> -->
+    </section>
+
+    <section class="font-Bitcount max-w-3xl mx-auto">
+
+        <h2 class="mb-2 text-4xl text-pink-400 hover:text-black">Typhography</h2>
+
+        <div class="mb-4">By <a href="#" class="text-gray-400 font-semibold">Fahri Rahman</a> 17 Juni 2025</div>
+
+        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium facilis, quia repudiandae,
+            dolore
+            dolores quas, ex inventore sit et odio eaque! Voluptatibus doloribus veniam incidunt mollitia cupiditate
+            facilis natus facere explicabo enim, repellat itaque nobis distinctio, quo animi at sit expedita.
+            Repellendus delectus vitae dicta ipsa laborum dolores perferendis unde, reiciendis mollitia iusto facilis
+            sunt minima? Perspiciatis eos sit beatae, suscipit itaque saepe mollitia quibusdam, officiis, voluptatibus
+            maxime veritatis. Nobis, eum! Hic, iusto ullam officia ratione nisi laborum ex reprehenderit. Repellat esse
+            voluptas ducimus totam tempora nobis aut commodi iure sequi? Maxime quisquam minima fuga expedita amet
+            excepturi omnis quae?</p>
+
+        <blockquote class="mb-4 italic font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Architecto
+            reprehenderit unde deserunt
+            eveniet
+            provident eum! Autem accusamus placeat sit cupiditate."</blockquote>
+
+        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque obcaecati debitis, at alias atque
+            repellendus?
+        </p>
+
+    </section>
+
+    <div class="max-w-xl h-96 bg-[#bada55] mx-auto mt-[42] overflow-y-scroll bg-scroll"
+        style="background-image: url(https://picsum.photos/300/300);">
+
+        <p class="p-5 text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam in ad et iure est,
+            consectetur voluptatum id
+            culpa dolore perferendis qui recusandae maiores accusamus molestiae? Iste doloremque culpa hic architecto
+            perspiciatis iure consequatur, aliquid, consectetur deleniti minima quod aperiam, natus sunt veniam
+            reiciendis quos eaque! Magni eveniet, earum repudiandae voluptatum debitis dignissimos similique esse amet,
+            ipsam soluta aliquid eius molestiae ipsum alias at sit voluptas, unde eligendi voluptates quam est eum eaque
+            totam? Assumenda quas labore eligendi sint eos delectus consequuntur quidem odit iure, aliquam nemo mollitia
+            blanditiis placeat, explicabo pariatur. Illo cumque illum incidunt libero. Fugit praesentium tenetur
+            doloribus optio sapiente reiciendis repudiandae. Maxime, sit id repellat sint quod dicta molestias autem
+            omnis a asperiores tempore fugit veniam, deserunt ducimus voluptas porro cum? Optio, quisquam beatae. Ullam
+            fugiat perferendis illo, eveniet perspiciatis temporibus et pariatur cum nobis nemo eligendi maxime
+            molestiae, ducimus consequuntur rem facilis! Vitae fugiat vero nihil ab soluta? Nemo quae ratione fugiat
+            reiciendis, esse voluptatibus deserunt libero excepturi eaque vitae sit placeat consequatur repellendus
+            exercitationem quibusdam, qui quia voluptatem suscipit voluptas quas non impedit? Voluptatem commodi
+            deserunt est maxime, laborum quam alias omnis natus harum temporibus. Deleniti veritatis consequuntur
+            voluptatibus, unde quasi atque nostrum consequatur rem.</p>
+    </div>
+
+    <div class="mt-32 max-w-xl mx-auto h-96 bg-slate-300 
+    bg-bottom-top bg-no-repeat bg-center rounded-2xl shadow-xl 
+    shadow-slate-500 overflow-hidden border-8 flex" style="background-image: url(img/1.jpg);">
+        <!-- <div class="w-full h-full bg-blue-300 mix-blend-multiply"></div>
+    </div> -->
+        <div class="w-[200px] h-[200px] bg-white/30 m-auto backdrop-blur-md 
+        rounded-full"></div>
+    </div>
+
+    <hr class="my-20">
+    <!-- Pseudo-class & Dark Mode -->
+
+    <div class="flex justify-center">
+        <span class="text-sm text-slate-500 mr-2">Light</span>
+        <input type="checkbox" id="toggle" class="hidden">
+        <label for="toggle">
+            <div class="w-9 h-5 bg-slate-500 rounded-full
+            flex items-center p-1 cursor-pointer">
+                <div class="w-4 h-4 bg-white rounded-full
+                toggle-circle"></div>
+            </div>
+        </label>
+        <span class="text-sm text-slate-500 ml-2">Dark</span>
+    </div>
+
+    <button class="my-10 bg-sky-400 px-5 py-2 rounded-full
+    text-white font-semibold font-sans block mx-auto 
+    hover:bg-sky-500 active:bg-sky-600 focus:ring focus:ring-sky-200 
+    dark:bg-slate-300 dark:text-slate-800 dark:hover:text-slate-900 
+    dark:hover:bg-slate-100">
+        Simpan
+    </button>
+
+    <div class="max-w-lg my-10 border border-slate-200 rounded-xl
+    mx-auto p-5 shadow-md font-Bitcount hover:bg-sky-400 group 
+    font-serif dark:hover:bg-slate-300">
+        <h5 class="font-bold text-slate-700 text-lg mb-3 group-hover:text-white
+        dark:group-hover:text-slate-800">
+            My Card</h5>
+        <p class="text-slate-700
+        group-hover:text-white
+        selection:bg-lime-300
+        selection:text-slate-900
+        first-line:uppercase
+        first-line:tracking-widest
+        first-letter:text-5xl
+        first-letter:float-left first-letter:mr-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus, neque, optio voluptatem ipsam ducimus
+            iure repellendus officiis deleniti quae quos animi eum commodi dolorem numquam dolor, explicabo repellat
+            illo quia!</p>
+    </div>
+
+    <div class="max-w-lg my-10 border border-slate-200 rounded-xl
+    mx-auto p-5 shadow-md font-sans">
+        <form action="">
+            <label for="email">
+                <span class="block font-semibold mb-1 text-slate-700 after:content-['*']
+                after:text-pink-500 after:ml-0.5">Email</span>
+                <input type="email" id="email" placeholder="masukan email.." class="px-3 py-2 border shadow rounded
+            w-full block text-sm placeholder:text-slate-400 focus:outline-none
+            focus:ring-2 focus:ring-sky-500 focus:border-sky-500
+            invalid:text-pink-700
+            invalid:focus:ring-pink-700
+            invalid:focus:border-pink-700 peer">
+                <p class="text-sm m-1 text-pink-700 invisible peer-invalid:visible">Email tidak valid</p>
+            </label>
+        </form>
+
+    </div>
+
+    <hr class="my-20">
+    <!-- Transform, Transition, Animation -->
+
+    <div class="w-40 h-40 bg-sky-500 mx-auto rounded-lg
+    shadow-lg hover:rotate-180 hover:bg-pink-500 transition
+    origin-top-left"></div>
+
+    <div class="w-40 h-40 bg-pink-500 mx-auto mt-20 rounded-full
+    shadow-lg animate-bounce">
+    </div>
+
+    <div class="w-40 h-40 bg-pink-500 mx-auto mt-20 rounded-lg
+    shadow-lg animate-goyang">
+    </div>
+
+    <hr class="my-20 border-t-4">
+    <!-- Layouting -->
+    <div class="container mx-auto">
+        <div class="border-rounded-lg shadow-lg p-10 relative">
+            <div class="w-10 h-10 bg-sky-600 rounded-full
+            flex fixed bottom-5 right-5 cursor-pointer
+            "><a href="#" class="text-2xl m-auto">🔝</a></div>
+            <img src="img/1.jpg" alt="keyboard" width="150" class="float-left mr-3">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit inventore a ad debitis voluptates
+                praesentium vel aut soluta? Aut explicabo, assumenda architecto voluptate placeat mollitia facere velit
+                culpa odit laboriosam asperiores maxime. In quisquam deleniti cum aliquam nesciunt praesentium
+                laboriosam, incidunt omnis molestias explicabo illo facere similique dolor consequatur nam!</p>
+        </div>
+    </div>
+
+    <div class="container mx-auto border rounded-lg 
+    shadow-lg p-10 mt-20 columns-3">
+        <img src="https://picsum.photos/600/400" alt="Image" class="mb-4">
+        <img src="https://picsum.photos/600/400" alt="Image" class="mb-4">
+        <img src="https://picsum.photos/600/400" alt="Image" class="mb-4">
+        <img src="https://picsum.photos/600/400" alt="Image" class="mb-4">
+        <img src="https://picsum.photos/600/400" alt="Image" class="mb-4">
+        <img src="https://picsum.photos/600/400" alt="Image" class="mb-4">
+    </div>
+
+
+    <div class="mb-96"></div>
+
+    <script>
+        const checkbox = document.querySelector('#toggle');
+        const html = document.querySelector('html');
+
+        checkbox.addEventListener('click', function () {
+            checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+        });
+    </script>
+
+</body>
+
+</html>
