@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="">
 
 <head>
     <meta charset="UTF-8">
@@ -8,8 +8,15 @@
     <title>Belajar Tailwindcss</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- tailwind link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -21,6 +28,7 @@
                     },
                     fontFamily: {
                         Bitcount: ['Bitcount Prop Single', 'sans-serif'],
+                        Inter: ['Inter', 'sans-serif'],
                     },
                     colors: {
                         cuy: '#d9f99d',
@@ -223,6 +231,153 @@
         <img src="https://picsum.photos/600/400" alt="Image" class="mb-4">
     </div>
 
+    <!-- Responsive Design dan flexbox -->
+    <hr class="my-20 border-t-4">
+
+    <div class="container px-6 font-inter max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:flex lg:max-w-full lg:p-0">
+        <div class="lg:p-12 lg:flex-1">
+            <h3 class="text-3xl font-bold text-slate-800 sm:text-5xl">Fahri
+                <span class="text-sky-300 md:text-6xl">Rahman</span>
+            </h3>
+            <img src="img/2.jpg" alt="Keyboard" class="mt-4 rounded-xl shadow-xl 
+        sm:mt-6 sm:h-64 sm:w-full sm:object-cover sm:object-center lg:hidden">
+            <h2 class="mt-6 text-2xl font-semibold text-slate-800">
+                Mari Belajar Tailwindcss</h2>
+            <p class="mt-2 text-slate-600 sm:mt-4 sm:text-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo harum cumque excepturi
+                exercitationem
+                mollitia eius recusandae, ratione maxime culpa iure nam corrupti temporibus minus.
+            </p>
+            <div class="mt-4 sm:mt-6">
+                <a href="#" class="inline-block px-3 py-2 bg-sky-400 text-white rounded-lg
+        shadow-lg uppercase font-semibold tracking-wider">Kunjungi Website Kami</a>
+            </div>
+        </div>
+        <div class="hidden lg:flex lg:w-1/2">
+            <img src="img/2.jpg" alt="Keyboard" class="object-cover rounded-l-3xl">
+        </div>
+    </div>
+
+    <h2 class="mt-24 mb-10 text-center font-bold text-3xl text-slate-700">My Gallery</h2>
+
+    <div class="container mx-auto px-6 font-inter sm:flex sm:flex-wrap sm:gap-6 sm:justify-evenly">
+        <div class="rounded-md shadow-lg overflow-hidden mb-10 bg-white sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+            <img src="https://picsum.photos/600/400" alt="Image Caption" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, sit
+                    tenetur! Perferendis id quaerat
+                    eum consequuntur enim asperiores expedita explicabo!</p>
+            </div>
+        </div>
+        <div class="rounded-md shadow-lg overflow-hidden mb-10 bg-white sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+            <img src="https://picsum.photos/600/400" alt="Image Caption" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, sit
+                    tenetur! Perferendis id quaerat
+                    eum consequuntur enim asperiores expedita explicabo!</p>
+            </div>
+        </div>
+        <div class="rounded-md shadow-lg overflow-hidden mb-10 bg-white sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+            <img src="https://picsum.photos/600/400" alt="Image Caption" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, sit
+                    tenetur! Perferendis id quaerat
+                    eum consequuntur enim asperiores expedita explicabo!</p>
+            </div>
+        </div>
+        <div class="rounded-md shadow-lg overflow-hidden mb-10 bg-white sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+            <img src="https://picsum.photos/600/400" alt="Image Caption" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, sit
+                    tenetur! Perferendis id quaerat
+                    eum consequuntur enim asperiores expedita explicabo!</p>
+            </div>
+        </div>
+        <div class="rounded-md shadow-lg overflow-hidden mb-10 bg-white sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+            <img src="https://picsum.photos/600/400" alt="Image Caption" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, sit
+                    tenetur! Perferendis id quaerat
+                    eum consequuntur enim asperiores expedita explicabo!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Grid -->
+    <hr class="my-20 border-t-4">
+
+    <div class="mt-64 p-2 font-inter grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 md:p-4">
+        <h2 class="h-15 text-xl font-semibold text-slate-700 md:col-start-4 md:row-start-2 md:flex"><span
+                class="self-center">Welcome To My Website</span></h2>
+        <div class="h-15 text-lg font-bold text-slate-600 md:col-start-2 md:row-start-2 md:flex"><span
+                class="self-end">@fahrirhmnnnn</span></div>
+
+        <div
+            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div
+                class="w-full h-full bg-[url('/img/11.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
+            </div>
+        </div>
+        <div
+            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div
+                class="w-full h-full bg-[url('/img/12.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
+            </div>
+        </div>
+        <div
+            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div
+                class="w-full h-full bg-[url('/img/13.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
+            </div>
+        </div>
+        <div
+            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div
+                class="w-full h-full bg-[url('/img/14.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
+            </div>
+        </div>
+        <div
+            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div
+                class="w-full h-full bg-[url('/img/15.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
+            </div>
+        </div>
+        <div
+            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-2 overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div
+                class="w-full h-full bg-[url('/img/16.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
+            </div>
+        </div>
+        <div
+            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-4 overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div
+                class="w-full h-full bg-[url('/img/17.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
+            </div>
+        </div>
+        <div
+            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div
+                class="w-full h-full bg-[url('/img/18.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
+            </div>
+        </div>
+        <div
+            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div
+                class="w-full h-full bg-[url('/img/19.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
+            </div>
+        </div>
+        <div
+            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div
+                class="w-full h-full bg-[url('/img/20.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
+            </div>
+        </div>
+    </div>
 
     <div class="mb-96"></div>
 
