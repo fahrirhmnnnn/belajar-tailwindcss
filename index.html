@@ -16,42 +16,39 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <!-- link css -->
+    <link rel="stylesheet" href="css/style.css">
     <!-- tailwind link -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <script>
         tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    spacing: {
-                        19: '4.75rem', // 19 * 0.25rem = 4.75rem
-                    },
-                    fontFamily: {
-                        Bitcount: ['Bitcount Prop Single', 'sans-serif'],
-                        Inter: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        cuy: '#d9f99d',
-                    },
-                    animation: {
-                        'bounce': 'bounce 2s infinite',
-                        'goyang': 'goyang 1s ease-in-out infinite',
-                    },
-                    keyframes: {
-                        goyang: {
-                            '0%, 100%': { transform: 'rotate(-3deg)' },
-                            '50%': { transform: 'rotate(3deg)' },
-                        },
-                    }
-                },
-            },
+            // darkMode: 'class',
+            // theme: {
+            //     extend: {
+            //         spacing: {
+            //             19: '4.75rem', // 19 * 0.25rem = 4.75rem
+            //         },
+            //         fontFamily: {
+            //             Bitcount: ['Bitcount Prop Single', 'sans-serif'],
+            //             Inter: ['Inter', 'sans-serif'],
+            //         },
+            //         colors: {
+            //             cuy: '#d9f99d',
+            //         },
+            //         animation: {
+            //             'bounce': 'bounce 2s infinite',
+            //             'goyang': 'goyang 1s ease-in-out infinite',
+            //         },
+            //         keyframes: {
+            //             goyang: {
+            //                 '0%, 100%': { transform: 'rotate(-3deg)' },
+            //                 '50%': { transform: 'rotate(3deg)' },
+            //             },
+            //         }
+            //     },
+            // },
         }
     </script>
-    <style type="text/tailwindcss">
-        #toggle:checked ~ label div.toggle-circle  {
-            @apply translate-x-3;
-        }
-    </style>
 </head>
 
 <body class="dark:bg-slate-800 dark:text-slate-200">
@@ -317,68 +314,51 @@
         <div class="h-15 text-lg font-bold text-slate-600 md:col-start-2 md:row-start-2 md:flex"><span
                 class="self-end">@fahrirhmnnnn</span></div>
 
-        <div
-            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-            <div
-                class="w-full h-full bg-[url('./img/11.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
+        <div class="group grid-card">
+            <div class="grid-card-img bg-[url('../img/11.jpg')]">
             </div>
         </div>
-        <div
-            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
-            <div
-                class="w-full h-full bg-[url('./img/12.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
+        <div class="group grid-card md:col-start-3">
+            <div class="grid-card-img bg-[url('../img/12.jpg')]">
             </div>
         </div>
-        <div
-            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-            <div
-                class="w-full h-full bg-[url('./img/13.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
+        <div class="group grid-card">
+            <div class="grid-card-img bg-[url('../img/13.jpg')]">
             </div>
         </div>
-        <div
-            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-            <div
-                class="w-full h-full bg-[url('./img/14.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
+        <div class="group grid-card">
+            <div class="grid-card-img bg-[url('../img/14.jpg')]">
             </div>
         </div>
-        <div
-            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-            <div
-                class="w-full h-full bg-[url('./img/15.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
+        <div class="group grid-card">
+            <div class="grid-card-img bg-[url('../img/15.jpg')]">
             </div>
         </div>
-        <div
-            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-2 overflow-hidden group relative hover:scale-95 transition-all duration-500">
-            <div
-                class="w-full h-full bg-[url('./img/16.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
+        <div class="group grid-card md:col-start-2">
+            <div class="grid-card-img bg-[url('../img/16.jpg')]">
             </div>
         </div>
-        <div
-            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-4 overflow-hidden group relative hover:scale-95 transition-all duration-500">
-            <div
-                class="w-full h-full bg-[url('./img/17.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
+        <div class="group grid-card md:col-start-4">
+            <div class="grid-card-img bg-[url('../img/17.jpg')]">
             </div>
         </div>
-        <div
-            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-            <div
-                class="w-full h-full bg-[url('./img/18.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
+        <div class="group grid-card">
+            <div class="grid-card-img bg-[url('../img/18.jpg')]">
             </div>
         </div>
-        <div
-            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
-            <div
-                class="w-full h-full bg-[url('./img/19.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
+        <div class="group grid-card md:col-start-3">
+            <div class="grid-card-img bg-[url('../img/19.jpg')]">
             </div>
         </div>
-        <div
-            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
-            <div
-                class="w-full h-full bg-[url('./img/20.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
+        <div class="group grid-card md:col-start-3">
+            <div class="grid-card-img bg-[url('../img/20.jpg')]">
             </div>
         </div>
     </div>
 
+    <hr class="my-20 border-t-4">
+
+    <h1>Hello Cuy</h1>
     <div class="mb-96"></div>
 
     <script>
